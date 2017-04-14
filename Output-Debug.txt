@@ -1,0 +1,14 @@
+﻿'ConjectureCheck.exe' (Win32): Loaded 'C:\Users\Folling\Documents\Visual Studio 2015\Projects\ConjectureCheck\Debug\ConjectureCheck.exe'. Symbols loaded.
+'ConjectureCheck.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntdll.dll'. Cannot find or open the PDB file.
+'ConjectureCheck.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel32.dll'. Cannot find or open the PDB file.
+'ConjectureCheck.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\kernel32.dll'
+'ConjectureCheck.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel32.dll'. Cannot find or open the PDB file.
+'ConjectureCheck.exe' (Win32): Loaded 'C:\Windows\SysWOW64\KernelBase.dll'. Cannot find or open the PDB file.
+'ConjectureCheck.exe' (Win32): Loaded 'C:\Windows\SysWOW64\vcruntime140d.dll'. Cannot find or open the PDB file.
+'ConjectureCheck.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ucrtbased.dll'. Cannot find or open the PDB file.
+'ConjectureCheck.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcp140d.dll'. Cannot find or open the PDB file.
+The thread 0x34ac has exited with code -1073741510 (0xc000013a).
+The thread 0x3c80 has exited with code -1073741510 (0xc000013a).
+The thread 0x1644 has exited with code -1073741510 (0xc000013a).
+The thread 0x2b40 has exited with code -1073741510 (0xc000013a).
+The program '[7088] ConjectureCheck.exe' has exited with code -1073741510 (0xc000013a).
