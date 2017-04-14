@@ -10,21 +10,21 @@ int sumDeca(int x);
 //enter the amount of numbers to check
 const int upToXthPrimes = 10000000;
 std::vector<int> primes = findAllPrimesUntilX(upToXthPrimes);
-int decaCount = 0;
 int primeCount , threeCount, valIntervCount;
-static int prevPrime = 0;
 
 int main() {	
 	//checks whether we've reached the intervals as large as the numbers we checked primes for
-	while (decaCount * 10 <= upToXthPrimes) {
+	register int prevPrime = 0;
+	register int decaCount = 0;
+	while (decaCount * 100 <= upToXthPrimes) {
 		if (decaCount % 50 == 0) std::cout << "Checked the first " << decaCount << " Intervals!" <<std::endl;
-		for (int i = prevPrime; i < primes.size(); i++) {
-			if (primes[i] > (decaCount + 1) * 10)
+		for (register int i = prevPrime; i < primes.size(); i++) {
+			if (primes[i] >= (decaCount + 1) * 10)
 			{
 				prevPrime = i;
 				break;
 			}
-			else if (primes[i] <= decaCount)continue;
+			else if (primes[i] < (decaCount*10)+1) continue;
 			else primeCount++;
 		}
 		if (primeCount == 3) threeCount++;
@@ -56,7 +56,7 @@ int main() {
 //returns all primes until x in a vector
 std::vector<int> findAllPrimesUntilX(int x) {
 	std::vector <int> result;
-	for (int i = 1; i <= x; i++) {
+	for (register int i = 1; i <= x; i++) {
 		if (i % 500 == 0) std::cout << "The first " << i << " numbers have been checked for whether they're prime.\n";
 		if (checkPrime(i)) result.push_back(i);
 	}
@@ -65,11 +65,11 @@ std::vector<int> findAllPrimesUntilX(int x) {
 }
 
 //checks whether a number is prime
-bool checkPrime(int n) {
+bool checkPrime(register int n) {
 	if (n == 2) return true;
 	if (n < 2 || n % 2 == 0) return false;
 
-	for (int i = 3; i<=sqrt(n); i += 2) {
+	for (register int i = 3; i<=sqrt(n); i += 2) {
 		if (n % i == 0) return false;
 	}
 	return true;

@@ -1,4 +1,4 @@
 ﻿  main.cpp
-c:\users\folling\documents\visual studio 2015\projects\conjecturecheck\conjecturecheck\main.cpp(20): warning C4018: '<': signed/unsigned mismatch
+c:\users\folling\documents\visual studio 2015\projects\conjecturecheck\conjecturecheck\main.cpp(21): warning C4018: '<': signed/unsigned mismatch
   ConjectureCheck.vcxproj -> C:\Users\Folling\documents\visual studio 2015\Projects\ConjectureCheck\Debug\ConjectureCheck.exe
   ConjectureCheck.vcxproj -> C:\Users\Folling\documents\visual studio 2015\Projects\ConjectureCheck\Debug\ConjectureCheck.pdb (Partial PDB)
